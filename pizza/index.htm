@@ -1,0 +1,1277 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+		<title>Заказ пиццы с доставкой - Вилки Нет</title>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<link rel="STYLESHEET" href="/font/font.css?v3" type="text/css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+	<link rel="STYLESHEET" href="/css/style.css?1586967460" type="text/css" media="all">
+		<link rel="STYLESHEET" href="/css/style.small.css?1586967460" type="text/css" media="all and (min-device-width: 0px) and (max-device-width:1120px)">
+		<link rel="STYLESHEET" href="/css/style.med.css?1586431756" type="text/css" media="all and (min-device-width: 400px) and (max-device-width: 1120px)">
+		<link rel="STYLESHEET" href="/css/style.pad.css?" type="text/css" media="all and (min-device-width: 700px) and (max-device-width: 1120px)">
+
+		<meta name="apple-itunes-app" content="app-id=1173429177">
+		<meta name="google-site-verification" content="YTg6kgf2e4UeJX48dF3jIBVD6HVROGPe4EqaYyYBBY4">
+	
+		<link rel="SHORTCUT ICON" href="/images/favicon.png">
+		<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png">
+	
+		<meta name="TITLE" content="Заказ пиццы с доставкой - Вилки Нет">
+		<meta content="Приготовим вкусную пиццу и бесплатно доставим на дом за час! В меню 11 пицц диаметром 25 и 35 сантиметров" name="description">
+		<meta content="" name="keywords">
+
+		<script>
+			var CITY = 'kostroma';
+		</script>
+
+		<script src="/js/jquery.js?v=1342" type="text/javascript">jQuery.noConflict();</script>
+
+	<script src="/js/jquery.liFixar.js"></script>
+
+		<script type="text/javascript" src="/js/jquery/jquery.form.js"></script>
+		<script src="/js/global.js?1586431757" type="text/javascript"></script>
+	
+		<link href="/js/jquery/tipsy.css?v3" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/js/jquery/jquery.tipsy.js"></script>
+	
+		<script type="text/javascript" src="/js/jquery/jquery.growl.js"></script>
+		<link rel="stylesheet" type="text/css" href="/js/jquery/growl.css">
+		
+	
+		<link href="/js/ui/css/smoothness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+		<script src="/js/ui/js/jquery-ui-1.9.2.custom.js"></script>
+	
+		<link href="/js/fotorama/fotorama.css" rel="stylesheet">
+	
+		<script src="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+		<link rel="stylesheet" href="/js/popup/magnific-popup.css">
+		<script src="/js/popup/jquery.magnific-popup.min.js"></script>
+
+
+	
+		<script src="/js/countdown/countdown.js"></script>
+	
+		<script src="/js/mask/jquery.inputmask.js"></script>
+		<script src="/js/mask/jquery.inputmask.extensions.js"></script>
+		<script src="/js/mask/jquery.inputmask.phone.extensions.js"></script>
+		<script src="/js/mask/jquery.inputmask.regex.extensions.js"></script>
+		<script src="/js/mask/jquery.inputmask.numeric.extensions.js"></script>
+		<script src="/js/mask/jquery.inputmask.date.extensions.js"></script>
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/css/select2.min.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/i18n/ru.js"></script>
+
+
+	
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-K7XKRW4');</script>
+	<!-- End Google Tag Manager -->
+
+
+
+
+	
+		<script type="text/javascript">
+	
+			var city_opening = '0';
+	
+			
+	
+			$(function(){
+	
+				initAll('main');
+	
+				var $fotoramaDiv = $('#fotorama').fotorama($('#fotorama').data());
+				var fotorama = $fotoramaDiv.data('fotorama');
+	
+				$('#fotorama').on(
+						'fotorama:show fotorama:showend',
+						function (e, fotorama, extra) {
+	
+	
+							if(fotorama.activeIndex+1 >= fotorama.size){
+								$('#fotorama_ph .aright').hide();
+								$('#fotorama_ph .aleft').show();
+							}
+							else if(fotorama.activeIndex+1 <= 1){
+								$('#fotorama_ph .aright').show();
+								$('#fotorama_ph .aleft').hide();
+							}
+							else{
+								$('#fotorama_ph .aright').show();
+								$('#fotorama_ph .aleft').show();
+							}
+	
+						}
+				);
+	
+				$('#fotorama_ph .aright').click(function(){
+					fotorama.show('>');
+				});
+	
+				$('#fotorama_ph .aleft').click(function(){
+					fotorama.show('<');
+				});
+
+
+				var $fotoramaDiv_mini = $('#fotorama_mini').fotorama();
+				var fotorama_mini = $fotoramaDiv_mini.data('fotorama');
+
+				$('#fotorama_mini').on(
+					'fotorama:show fotorama:showend',
+					function (e, fotorama_mini, extra) {
+
+
+						if(fotorama_mini.activeIndex+1 >= fotorama_mini.size){
+							$('#fotorama_mini_ph .aright').hide();
+							$('#fotorama_mini_ph .aleft').show();
+						}
+						else if(fotorama_mini.activeIndex+1 <= 1){
+							$('#fotorama_mini_ph .aright').show();
+							$('#fotorama_mini_ph .aleft').hide();
+						}
+						else{
+							$('#fotorama_mini_ph .aright').show();
+							$('#fotorama_mini_ph .aleft').show();
+						}
+
+					}
+				);
+
+				$('#fotorama_mini_ph .aright').click(function(){
+					fotorama.show('>');
+				});
+
+				$('#fotorama_mini_ph .aleft').click(function(){
+					fotorama.show('<');
+				});
+
+
+
+				$('h1').each(function() {
+	
+					if(!$(this).hasClass('notd')) {
+						//$(this).html("<table class=h_tit><tr><td class=i1></td><td class=ic>" + $(this).html() + "</td><td class=i2></td></table>");
+					}
+	
+				});
+	
+				$('h4').each(function() {
+	
+					$(this).html("<table class=h_tit3><tr><td class=i1></td><td class=ic>"+$(this).html()+"</td><td class=i2></td></table>");
+	
+				});
+	
+				$('h3').each(function() {
+	
+					$(this).html("<table class=h_tit2><td class=ic>"+$(this).html()+"</td><td class=i2></td></table>");
+	
+				});
+	
+	
+			});
+		</script>
+	
+		<style>
+			.mfp-hide {
+			  display: none !important;
+			}
+		</style>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/d8150dad621e0dd83fc7c228568c5592_1.js" async=""></script>
+
+
+</head>
+	
+	<body class="">
+			
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7XKRW4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+	<center>
+
+
+
+	
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- TOP -->
+
+	<div class="top-bg"></div>
+
+		
+	<div id='topblock' style="z-index:1000;">
+		<div id='topblock_inner' style="z-index:1000;">
+			<div class="data">
+
+					<div style="position: relative">
+
+				<span class="top-links-left"><i class="fas fa-map-marker-alt"></i> <a href="#ct_list_select" class="popup phonelink city_but">Кострома</a></span>
+				
+				
+				<div id="ct_list_select" class="white-popup-mini mfp-hide">
+								
+				<br><span>Выберите город из списка:</span><br><br>
+				<div class="city_list"><a data-id="vladimir" href="http://vladimir.vilkinet.ru/pizza/">Владимир</a><br><a data-id="ivanovo" href="http://ivanovo.vilkinet.ru/pizza/">Иваново</a><br><a data-id="kostroma" href="http://kostroma.vilkinet.ru/pizza/">Кострома</a><br><a data-id="murom" href="http://murom.vilkinet.ru/pizza/">Муром</a><br><a data-id="orenburg" href="http://orenburg.vilkinet.ru/pizza/">Оренбург</a><br><a data-id="tyumen" href="http://tyumen.vilkinet.ru/pizza/">Тюмень</a><br></div>
+				</div>
+			</div>
+			
+			<script>
+			
+			$(".city_list A").click(function(){
+			
+				setcookie("CT_setted", $(this).data("id"), null, "/", ".vilkinet.ru");
+			
+			});
+			
+			
+			
+			$(function(){ 
+				$('.city_but').click();
+			});
+			
+			
+			
+			</script>
+
+							<span class="top-links-right"><a href="/profile/" class="phonelink">Личный кабинет</a></span>
+
+				<table class="topblock_table" cellpadding="0" cellspacing="0" width="100%" border="0" style="table-layout:fixed;">
+				<tr>
+					<td bgcolor="#FFFFFF">&nbsp;
+						<a href="#" onclick="window.history.back();return false;" style="display: inline-block;        color: #960012;
+								margin-top: 8px;
+								margin-left: -10px;
+								font-size: 28px;" class="menu-ph show_mini">&larr;</a>
+
+						<a href="#" onclick="$('body').toggleClass('menu_vis');return false;" class="menu-ph show_mini back_but_has"><img src="/images/icon-menu.png" border="0"></a>
+
+					</td>
+					<td bgcolor="#FFFFFF" class="call-ph-icon" width="50" valign="middle"><a href="/"><img src="/images/icon-call.png" class="icon-call" border="0" width="40" height="40" style=""></a>
+
+
+
+
+					</td>
+					<td bgcolor="#FFFFFF" class="call-ph-link" width="300">
+
+
+						<div class="city_selector-ph show_mini">
+							<i class="fas fa-map-marker-alt"></i> <a href="#ct_list_select" class="popup phonelink">Кострома</a>
+						</div>
+
+						<div class="toppad" style="margin-bottom: 1px;">
+							<font class="phonelink">Телефон для заказов</font></div>
+			<a href="tel://645050" class="phone">645 050</a>
+
+
+
+
+
+					</td>
+					<td bgcolor="#FFFFFF" width="300" align="center"><a href="/"><img src="/images/logo.png" style="display:block;" alt="Вилки Нет - сеть кафе с доставкой" title="Вилки Нет - сеть кафе с доставкой" id="logo_img"></a><!--font class="slogan">Сеть кафе с доставкой</font--></td>
+					<td bgcolor="#FFFFFF" width="300" align="right" id="lgn_ph">
+
+
+
+							<a href="tel://645050" class="call-ph show_mini"><img src="/images/icon-call-1.png" border="0"></a>
+			
+			
+			
+			
+			<div style="position: relative;padding-right:5px;" class="bas_holder hide_mini"><div class="toppad" style="padding-bottom:3px;"><span class="phonelink">Нет товаров в корзине</span></div>
+		<span class="price_ph price_ph1">0<span class="rub">₽</span></span>
+
+
+		<img src="/images/icon-none.png" class="icon-bas" border="0"></div>
+		
+		
+		<div style="position: relative;padding-right:5px;" class="bas_holder_mobile show_mini">
+		
+		<div class="count-ph empty"><img src="/images/icon-order.png" border="0"></div>
+
+		</div>
+		
+		
+
+					</td>
+					<td bgcolor="#FFFFFF" width="50" align="right"></td>
+					<td bgcolor="#FFFFFF">&nbsp;</td>
+				</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+			
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- MENU -->
+	
+	<div id="topblock_ph">
+
+		<div class="mainmenu hide_mini">
+			<a href="/">Меню</a>
+			<a href="/offers/">Акции</a>
+						<a href="/guestbook/">Отзывы</a>
+			<a href="http://vilkifranch.ru/?utm_source=b2csite&utm_medium=refferal&utm_campaign=VilkiNet&utm_content=b2csite'nj" target="_blank">Франчайзинг</a>
+			<a href="/cafes/">Кафе</a>
+			<a href="/hotline/" class="hotline">Горячая линия</a>
+			<a href="/profile/" class="show_mini">Личный кабинет</a>
+					</div>
+	
+		<div class="sidemenu show_mini">
+
+
+			<img src="/images/logo.png" class="logo">
+
+
+				<!--a href="#" onclick="$('body').toggleClass('menu_vis');return false;" class="close-menu-ph show_mini"><img src="/images/icon-menu.png"  border="0"></a-->
+
+			<a href="#" onclick="$('body').toggleClass('menu_vis');return false;" class="close-sidemenu show_mini">×</a>
+
+			
+				<div class="mainmenu1">
+					<a href="/" class="ctlg_link" onclick="$(this).next('div').toggle();$(this).toggleClass('opened');return false;">Меню</a>
+					<div style="padding:0px 20px; padding-left:30px; display: none; font-size: 16px; line-height: 23px">
+
+
+						<a href="/sets/">Сеты</a><br><a href="index.htm">Пицца</a><br><a href="/bigrolls/">Большие роллы</a><br><a href="/hotrolls/">Темпурные роллы</a><br><a href="/zapechennye-rolly/">Запеченные роллы</a><br><a href="/sushi/">Суши</a><br><a href="/makirolls/">Маки роллы</a><br><a href="/vok/">Блюда WOK</a><br><a href="/supy/">Супы</a><br><a href="/salaty/">Салаты и Закуски</a><br><a href="/kombo--nabory/">Комбо-наборы</a><br><a href="/deserty/">Десерты</a><br><a href="/detskoe-menyu/">Детское меню</a><br><a href="/drinks/">Напитки</a><br><a href="/sousy-pripravy/">Соусы и приправы</a><br>
+
+						<br></div>
+					<a href="/offers/">Акции</a>
+					<a href="/guestbook/">Отзывы</a>
+
+					<a href="http://vilkifranch.ru/?utm_source=b2csite&utm_medium=refferal&utm_campaign=VilkiNet&utm_content=b2csite'nj" target="_blank">Франчайзинг</a>
+					<a href="/cafes/">Кафе</a>
+					<a href="/hotline/" class="hotline">Горячая линия</a><br>
+					<a href="/profile/" class="show_mini">Личный кабинет</a>
+
+
+					
+				</div>
+
+			<div style="margin-left:20px; margin-top:30px;">
+
+				<div class="">
+					<i class="fas fa-map-marker-alt"></i> <a href="#ct_list_select" class="popup ">Кострома</a>
+				</div>
+
+				<br>
+
+				<div class="toppad" style="margin-bottom: 1px;">
+							<font class="phonelink">Телефон для заказов</font></div>
+			<a href="tel://645050" class="phone">645 050</a>
+				<br><br>
+
+							<a href="https://vk.com/vilkinet_kostroma" class="nobord"><img src="/images/i-v.jpg" border="0" style="margin-right:10px;"></a>
+			
+							<a href="https://www.instagram.com/vilkinet_kostroma/" class="nobord"><img src="/images/i-i.jpg" border="0" style="margin-right:10px;"></a>
+			
+			</div>
+
+		</div>
+
+	
+	
+			
+	<div style='width:1000px' class="content-ph">
+		<h1 class="main_title">Пицца</h1>		<div style="text-align:left; width:1000px;" id="main_ph">
+	
+	
+	
+			<table cellpadding="0" cellspacing="0" width="1000px" border="0" class="text" style="margin-top:35px;">
+				<tr valign="top">
+					<td width="235" class="left_td" style="padding-right:20px;width:235px;">
+	
+						<div id="menu_left">
+
+	
+						<a href="/sets/" class="leftmenu">Сеты</a><br><a href="index.htm" class="leftmenu">Пицца</a><br><a href="/bigrolls/" class="leftmenu">Большие роллы</a><br><a href="/hotrolls/" class="leftmenu">Темпурные роллы</a><br><a href="/zapechennye-rolly/" class="leftmenu">Запеченные роллы</a><br><a href="/sushi/" class="leftmenu">Суши</a><br><a href="/makirolls/" class="leftmenu">Маки роллы</a><br><a href="/vok/" class="leftmenu">Блюда WOK</a><br><a href="/supy/" class="leftmenu">Супы</a><br><a href="/salaty/" class="leftmenu">Салаты и Закуски</a><br><a href="/kombo--nabory/" class="leftmenu">Комбо-наборы</a><br><a href="/deserty/" class="leftmenu">Десерты</a><br><a href="/detskoe-menyu/" class="leftmenu">Детское меню</a><br><a href="/drinks/" class="leftmenu">Напитки</a><br><a href="/sousy-pripravy/" class="leftmenu">Соусы и приправы</a><br><br clear="all">						<br><br>
+						
+	
+						</div>
+	
+					</td>					<td class="content_td">
+
+	
+						<div class='fotorama_pad_order_ph' style='display:none;position: absolute;'>
+			
+				
+				<a href='#bnpd_franki' id='lnk_bnpd_franki' class='fbin' style='position: absolute;'></a>
+				<div id='bnpd_franki' class='white-popup mfp-hide' style='padding:30px; width: 700px; height: auto; box-sizing: border-box'><b>Обратите внимание!<br>Вы переходите в раздел доставки от кафе ФранкиФэп.</b><br>Если Вы хотите сделать заказ и в кафе ФранкиФэп и в кафе ВилкиНет, пожалуйста, оформите два разных заказа</div>
+				
+				
+				</div>
+	
+				
+				<style>
+				
+				#bnpd A{
+					text-decoration: underline;
+				}
+				
+				</style>
+				
+				<script type="text/javascript">
+				
+					
+					var fotoramaDiv = $('.fotorama11').fotorama();
+					
+					$('.fbin').magnificPopup({
+						type: 'inline'
+					}); 
+					
+					
+					
+					
+					</script>
+				
+				<table border="0" cellspacing="0" cellpadding="0" width="100%" class="items_table main_items"><tr>
+				<td align="center" class="rltv item_holder " iden="999" data-title='Акция 199 руб. Пицца Пепперони Барбекю 25 см' data-ingredients='Томатный соус, соус барбекю, колбаски пепперони, сыр моцарелла, прованские травы' data-calorie='' data-ves='370 гр. ' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"1000","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 370 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":199,"old_price":"260"}]' data-imgmtime='1588775233'>
+
+				<div id="aktsiya-199-rub-pitstsa-pepperoni-barbekyu-25-sm" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">999</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; " class="" iden="999">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#aktsiya-199-rub-pitstsa-pepperoni-barbekyu-25-sm" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/999.jpg?1588775233)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#aktsiya-199-rub-pitstsa-pepperoni-barbekyu-25-sm" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Акция 199 руб. Пицца Пепперони Барбекю 25 см</a>
+
+
+					<div class="itm_desc">Томатный соус, соус барбекю, колбаски пепперони, сыр моцарелла, прованские травы</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							370 гр. 
+
+							
+
+						</td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph inaction"><p class="old" style='top:-1px;'>260<span class="rub">₽</span></p><span class="pval">199</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="1000">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td>
+				<td align="center" class="rltv item_holder " iden="929" data-title='Пицца Пепперони' data-ingredients=' Томатный соус, колбаски пепперони, сыр моцарелла, прованские травы' data-calorie='' data-ves='' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"930","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 320 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":250,"old_price":0},{"id":"931","title":"33 \u0441\u043c","ves":"\u0432\u0435\u0441 - 540 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 33 \u0441\u043c","otitle":"33 \u0441\u043c","price":390,"old_price":0}]' data-imgmtime='1568796264'>
+
+				<div id="pitstsa-pepperoni" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">929</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; margin-left: 15px;" class="" iden="929">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#pitstsa-pepperoni" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/929.jpg?1568796264)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#pitstsa-pepperoni" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Пицца Пепперони</a>
+
+
+					<div class="itm_desc"> Томатный соус, колбаски пепперони, сыр моцарелла, прованские травы</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							
+
+							<!--div class='variant_ves'></div><div class='variant_size'></div--><select style='width:85%;' class='var_selector ing_select' onchange='selVariantValList(this.value, this)'><option value='930|250|вес - 320 гр.|диаметр - 25 см|0|'>25 см</option><option value='931|390|вес - 540 гр.|диаметр - 33 см|0|'>33 см</option>
+
+						</select></td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">250</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="930">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td>
+				<td align="center" class="rltv item_holder " iden="1002" data-title='Комбо 3 пиццы' data-ingredients='-Пицца Пепперони 33 см
+-Пицца Цезарь 33 см
+-Пицца Бекон Барбекю 33 см' data-calorie='' data-ves='2180 гр.' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='1000' valign="top" style="padding-bottom:20px;" data-price-variants='""' data-imgmtime='1586512152'>
+
+				<div id="kombo-3-pitstsy" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">1002</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; margin-left: 15px;" class="" iden="1002">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#kombo-3-pitstsy" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/1002.jpg?1586512152)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#kombo-3-pitstsy" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Комбо 3 пиццы</a>
+
+
+					<div class="itm_desc">-Пицца Пепперони 33 см
+-Пицца Цезарь 33 см
+-Пицца Бекон Барбекю 33 см</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							2180 гр.
+
+							
+
+						</td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">1000</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="1002">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td></tr><tr>
+				<td align="center" class="rltv item_holder " iden="932" data-title='Пицца Маргарита' data-ingredients='Томатный соус, сыр моцарелла, прованские травы' data-calorie='' data-ves='' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"933","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 320 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":170,"old_price":0},{"id":"934","title":"33 \u0441\u043c","ves":"\u0432\u0435\u0441 - 520 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 33 \u0441\u043c","otitle":"33 \u0441\u043c","price":290,"old_price":0}]' data-imgmtime='1568796366'>
+
+				<div id="pitstsa-margarita" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">932</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; " class="" iden="932">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#pitstsa-margarita" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/932.jpg?1568796366)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#pitstsa-margarita" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Пицца Маргарита</a>
+
+
+					<div class="itm_desc">Томатный соус, сыр моцарелла, прованские травы</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							
+
+							<!--div class='variant_ves'></div><div class='variant_size'></div--><select style='width:85%;' class='var_selector ing_select' onchange='selVariantValList(this.value, this)'><option value='933|170|вес - 320 гр.|диаметр - 25 см|0|'>25 см</option><option value='934|290|вес - 520 гр.|диаметр - 33 см|0|'>33 см</option>
+
+						</select></td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">170</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="933">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td>
+				<td align="center" class="rltv item_holder " iden="956" data-title='Пицца Гавайская' data-ingredients='Белый соус, обжаренное куриное филе, ананасы, сыр моцарелла' data-calorie='' data-ves='' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"957","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 370 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":290,"old_price":0},{"id":"958","title":"33 \u0441\u043c","ves":"\u0432\u0435\u0441 - 600 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 33 \u0441\u043c","otitle":"33 \u0441\u043c","price":390,"old_price":0}]' data-imgmtime='1568796837'>
+
+				<div id="pitstsa-gavayskaya" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">956</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; margin-left: 15px;" class="" iden="956">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#pitstsa-gavayskaya" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/956.jpg?1568796837)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#pitstsa-gavayskaya" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Пицца Гавайская</a>
+
+
+					<div class="itm_desc">Белый соус, обжаренное куриное филе, ананасы, сыр моцарелла</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							
+
+							<!--div class='variant_ves'></div><div class='variant_size'></div--><select style='width:85%;' class='var_selector ing_select' onchange='selVariantValList(this.value, this)'><option value='957|290|вес - 370 гр.|диаметр - 25 см|0|'>25 см</option><option value='958|390|вес - 600 гр.|диаметр - 33 см|0|'>33 см</option>
+
+						</select></td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">290</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="957">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td>
+				<td align="center" class="rltv item_holder " iden="935" data-title='Пицца Ветчина и курица' data-ingredients='Томатный соус, ветчина, обжаренное куриное филе, сыр моцарелла' data-calorie='' data-ves='' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"936","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 375 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":290,"old_price":0},{"id":"937","title":"33 \u0441\u043c","ves":"\u0432\u0435\u0441 - 600 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 33 \u0441\u043c","otitle":"33 \u0441\u043c","price":430,"old_price":0}]' data-imgmtime='1574839011'>
+
+				<div id="pitstsa-vetchina-i-kuritsa" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">935</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; margin-left: 15px;" class="" iden="935">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#pitstsa-vetchina-i-kuritsa" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/935.jpg?1574839011)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#pitstsa-vetchina-i-kuritsa" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Пицца Ветчина и курица</a>
+
+
+					<div class="itm_desc">Томатный соус, ветчина, обжаренное куриное филе, сыр моцарелла</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							
+
+							<!--div class='variant_ves'></div><div class='variant_size'></div--><select style='width:85%;' class='var_selector ing_select' onchange='selVariantValList(this.value, this)'><option value='936|290|вес - 375 гр.|диаметр - 25 см|0|'>25 см</option><option value='937|430|вес - 600 гр.|диаметр - 33 см|0|'>33 см</option>
+
+						</select></td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">290</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="936">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td></tr><tr>
+				<td align="center" class="rltv item_holder " iden="987" data-title='Пицца Бекон Барбекю' data-ingredients='Томатный соус, бекон, колбаски пепперони, сыр моцарелла, соус барбекю' data-calorie='' data-ves='' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"988","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 360 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":340,"old_price":0},{"id":"989","title":"33 \u0441\u043c ","ves":"\u0432\u0435\u0441 - 620 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"33 \u0441\u043c ","price":490,"old_price":0}]' data-imgmtime='1568796107'>
+
+				<div id="pitstsa-bekon-barbekyu" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">987</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; " class="" iden="987">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#pitstsa-bekon-barbekyu" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/987.jpg?1568796107)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#pitstsa-bekon-barbekyu" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Пицца Бекон Барбекю</a>
+
+
+					<div class="itm_desc">Томатный соус, бекон, колбаски пепперони, сыр моцарелла, соус барбекю</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							
+
+							<!--div class='variant_ves'></div><div class='variant_size'></div--><select style='width:85%;' class='var_selector ing_select' onchange='selVariantValList(this.value, this)'><option value='988|340|вес - 360 гр.|диаметр - 25 см|0|'>25 см</option><option value='989|490|вес - 620 гр.|диаметр - 25 см|0|'>33 см </option>
+
+						</select></td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">340</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="988">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td>
+				<td align="center" class="rltv item_holder " iden="941" data-title='Пицца Супер Мясная' data-ingredients='Томатный соус, ветчина, фрикадельки, бекон, колбаски пепперони, корнишоны, маслины,перец болгарский, сыр моцарелла ' data-calorie='' data-ves='' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"942","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 420 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":360,"old_price":0},{"id":"943","title":"33 \u0441\u043c","ves":"\u0432\u0435\u0441 - 670 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 33 \u0441\u043c","otitle":"33 \u0441\u043c","price":570,"old_price":0}]' data-imgmtime='1580159771'>
+
+				<div id="pitstsa-super-myasnaya" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">941</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; margin-left: 15px;" class="" iden="941">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#pitstsa-super-myasnaya" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/941.jpg?1580159771)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#pitstsa-super-myasnaya" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Пицца Супер Мясная</a>
+
+
+					<div class="itm_desc">Томатный соус, ветчина, фрикадельки, бекон, колбаски пепперони, корнишоны, маслины,перец болгарский, сыр моцарелла </div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							
+
+							<!--div class='variant_ves'></div><div class='variant_size'></div--><select style='width:85%;' class='var_selector ing_select' onchange='selVariantValList(this.value, this)'><option value='942|360|вес - 420 гр.|диаметр - 25 см|0|'>25 см</option><option value='943|570|вес - 670 гр.|диаметр - 33 см|0|'>33 см</option>
+
+						</select></td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">360</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="942">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td>
+				<td align="center" class="rltv item_holder " iden="938" data-title='Пицца Цезарь' data-ingredients='Соус Цезарь, обжаренное куриное филе, сыр моцарелла, томаты, салат Айсберг,  сыр Пармезан' data-calorie='' data-ves='' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"939","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 400 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":310,"old_price":0},{"id":"940","title":"33 \u0441\u043c","ves":"\u0432\u0435\u0441 - 630 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 33 \u0441\u043c","otitle":"33 \u0441\u043c","price":450,"old_price":0}]' data-imgmtime='1586718944'>
+
+				<div id="pitstsa-tsezar" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">938</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; margin-left: 15px;" class="" iden="938">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#pitstsa-tsezar" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/938.jpg?1586718944)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#pitstsa-tsezar" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Пицца Цезарь</a>
+
+
+					<div class="itm_desc">Соус Цезарь, обжаренное куриное филе, сыр моцарелла, томаты, салат Айсберг,  сыр Пармезан</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							
+
+							<!--div class='variant_ves'></div><div class='variant_size'></div--><select style='width:85%;' class='var_selector ing_select' onchange='selVariantValList(this.value, this)'><option value='939|310|вес - 400 гр.|диаметр - 25 см|0|'>25 см</option><option value='940|450|вес - 630 гр.|диаметр - 33 см|0|'>33 см</option>
+
+						</select></td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">310</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="939">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td></tr><tr>
+				<td align="center" class="rltv item_holder " iden="950" data-title='Пицца Чикен Ранч' data-ingredients='Соус Цезарь, обжаренное куриное филе, бекон фри, сыр моцарелла, перец болгарский, лук красный' data-calorie='' data-ves='' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"951","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 420 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":290,"old_price":0},{"id":"952","title":"33 \u0441\u043c ","ves":"\u0432\u0435\u0441 - 660 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 33 \u0441\u043c","otitle":"33 \u0441\u043c ","price":430,"old_price":0}]' data-imgmtime='1580160415'>
+
+				<div id="pitstsa-chiken-ranch" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">950</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; " class="" iden="950">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#pitstsa-chiken-ranch" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/950.jpg?1580160415)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#pitstsa-chiken-ranch" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Пицца Чикен Ранч</a>
+
+
+					<div class="itm_desc">Соус Цезарь, обжаренное куриное филе, бекон фри, сыр моцарелла, перец болгарский, лук красный</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							
+
+							<!--div class='variant_ves'></div><div class='variant_size'></div--><select style='width:85%;' class='var_selector ing_select' onchange='selVariantValList(this.value, this)'><option value='951|290|вес - 420 гр.|диаметр - 25 см|0|'>25 см</option><option value='952|430|вес - 660 гр.|диаметр - 33 см|0|'>33 см </option>
+
+						</select></td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">290</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="951">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td>
+				<td align="center" class="rltv item_holder " iden="959" data-title='Пицца Баварская' data-ingredients='Томатный соус, колбаски охотничьи, бекон фри, сыр моцарелла, корнишоны, томаты, лук красный, соус терияки' data-calorie='' data-ves='' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"960","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 420 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":340,"old_price":0},{"id":"961","title":"33 \u0441\u043c","ves":"\u0432\u0435\u0441 - 670 \u0433\u0440. ","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 33 \u0441\u043c","otitle":"33 \u0441\u043c","price":490,"old_price":0}]' data-imgmtime='1568790859'>
+
+				<div id="pitstsa-bavarskaya" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">959</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; margin-left: 15px;" class="" iden="959">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#pitstsa-bavarskaya" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/959.jpg?1568790859)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#pitstsa-bavarskaya" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Пицца Баварская</a>
+
+
+					<div class="itm_desc">Томатный соус, колбаски охотничьи, бекон фри, сыр моцарелла, корнишоны, томаты, лук красный, соус терияки</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							
+
+							<!--div class='variant_ves'></div><div class='variant_size'></div--><select style='width:85%;' class='var_selector ing_select' onchange='selVariantValList(this.value, this)'><option value='960|340|вес - 420 гр.|диаметр - 25 см|0|'>25 см</option><option value='961|490|вес - 670 гр. |диаметр - 33 см|0|'>33 см</option>
+
+						</select></td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">340</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="960">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td>
+				<td align="center" class="rltv item_holder " iden="944" data-title='Пицца Курица Терияки' data-ingredients='Томатный соус, обжаренное куриное филе, бекон, ананасы, соус терияки, лук красный, кунжут' data-calorie='' data-ves='' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"945","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 440 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":340,"old_price":0},{"id":"946","title":"33 \u0441\u043c","ves":"\u0432\u0435\u0441 - 720 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 33 \u0441\u043c","otitle":"33 \u0441\u043c","price":490,"old_price":0}]' data-imgmtime='1583487302'>
+
+				<div id="pitstsa-kuritsa-teriyaki" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">944</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; margin-left: 15px;" class="" iden="944">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#pitstsa-kuritsa-teriyaki" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/944.jpg?1583487302)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#pitstsa-kuritsa-teriyaki" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Пицца Курица Терияки</a>
+
+
+					<div class="itm_desc">Томатный соус, обжаренное куриное филе, бекон, ананасы, соус терияки, лук красный, кунжут</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							
+
+							<!--div class='variant_ves'></div><div class='variant_size'></div--><select style='width:85%;' class='var_selector ing_select' onchange='selVariantValList(this.value, this)'><option value='945|340|вес - 440 гр.|диаметр - 25 см|0|'>25 см</option><option value='946|490|вес - 720 гр.|диаметр - 33 см|0|'>33 см</option>
+
+						</select></td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">340</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="945">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td></tr><tr>
+				<td align="center" class="rltv item_holder " iden="953" data-title='Пицца Лосось и Краб' data-ingredients='Томатный соус, лосось копченый, снежный краб, сыр моцарелла, соус Цезарь, петрушка, прованские травы' data-calorie='' data-ves='' data-action_moment='' data-action_moment_js='' data-old_price='0' data-price='0' valign="top" style="padding-bottom:20px;" data-price-variants='[{"id":"954","title":"25 \u0441\u043c","ves":"\u0432\u0435\u0441 - 400 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 25 \u0441\u043c","otitle":"25 \u0441\u043c","price":390,"old_price":0},{"id":"955","title":"33 \u0441\u043c","ves":"\u0432\u0435\u0441- 645 \u0433\u0440.","size":"\u0434\u0438\u0430\u043c\u0435\u0442\u0440 - 33 \u0441\u043c","otitle":"33 \u0441\u043c","price":590,"old_price":0}]' data-imgmtime='1568796796'>
+
+				<div id="pitstsa-losos-i-krab" class="item_block white-popup zoom-anim-dialog mfp-hide cat_catalog">953</div>
+
+				<table cellpadding="0" cellspacing="0" style="width:235px; height: 370px;position: relative; background:white; " class="" iden="953">
+				<tr>
+				<td valign="top" align="left" style="position:relative; ">
+
+		<a href="#pitstsa-losos-i-krab" class="item_link">
+		
+				<div class="ani_img item_img" style="width: 235px; height:140px; background-image: url(/uploads/catalog/i/thumb/953.jpg?1568796796)"><span class="icons"></span></div>
+
+
+				</a>
+
+					<div style="padding:20px; height:140px; width:195px;">
+					<a href="#pitstsa-losos-i-krab" class="blocktitle" onclick="$(this).parent().parent().find('.item_link').click(); return false;">Пицца Лосось и Краб</a>
+
+
+					<div class="itm_desc">Томатный соус, лосось копченый, снежный краб, сыр моцарелла, соус Цезарь, петрушка, прованские травы</div>
+
+
+
+					<div class="itm_bot">
+						<table cellpadding="0" cellspacing="0" style="width:235px;">
+						<tr>
+						<td width="50%" class="i1">
+
+							
+
+							<!--div class='variant_ves'></div><div class='variant_size'></div--><select style='width:85%;' class='var_selector ing_select' onchange='selVariantValList(this.value, this)'><option value='954|390|вес - 400 гр.|диаметр - 25 см|0|'>25 см</option><option value='955|590|вес- 645 гр.|диаметр - 33 см|0|'>33 см</option>
+
+						</select></td>
+						<td width="50%" class="i2">
+
+
+
+						<span class="price_ph "><span class="pval">390</span><span class="rub">₽</span></span>
+
+						<div class="add2bas" iden="954">&nbsp;</div>
+
+						</td>
+						</tr></table>
+					</div>
+
+					</div>
+
+
+				</td></tr></table>
+
+				</td></tr></table>
+		<br>
+		<div class='catalog_desc'>
+				<div>Мы готовим традиционную пиццу двух размеров: большую (33 см) для тусовки, и</div>
+<div>среднюю (25 см) для двоих.<b><br>
+</b><i><br type="_moz">
+</i></div>
+<div><i>Внешний вид блюд в заказе может отличаться от фотографий на сайте</i></div>
+				</div>
+
+				
+
+	<script>
+
+	$(function(){
+		if(document.location.hash){ $("A[href='"+document.location.hash+"']").click(); }
+	});
+
+	</script>
+
+		
+					</td>
+				</tr>
+			</table>
+	
+	
+		</div>
+	</div>
+	
+	
+		</div> <!-- // topblock_ph -->
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- RECOMMEND -->
+
+	
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- BOTTOM -->
+	
+	<table cellpadding="40" cellspacing="0" width="100%" border="0" class="text footer" style="margin-top:40px;">
+		<tr>
+			<td bgcolor="#FFFFFF" align="center">
+
+				<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+				<!-- MENU -->
+				<div id="topblock_ph">
+					<table cellpadding="0" cellspacing="0" width="1000" class="" border="0" style="padding-bottom:40px;">
+						<tr>
+							<td style="text-align: center;" class="bot_menu">
+
+
+								<a href="/about/" class="menu">О нас</a><img src="/images/lim-1.png" border="0" align="absmiddle" class="lim" width="8" height="9">
+								<a href="/news/" class="menu">Новости</a><img src="/images/lim-2.png" border="0" align="absmiddle" class="lim" width="8" height="9">
+								<a href="/cafes/" class="menu">Кафе</a><img src="/images/lim-1.png" border="0" align="absmiddle" class="lim" width="8" height="9">
+								<a href="/terms/" class="menu">Условия покупки</a><img src="/images/lim-2.png" border="0" align="absmiddle" class="lim" width="8" height="9">
+								<a href="/bonus/" class="menu">Бонусная система</a><img src="/images/lim-1.png" border="0" align="absmiddle" class="lim" width="8" height="9">
+								<a href="/offers/" class="menu">Акции</a><img src="/images/lim-2.png" border="0" align="absmiddle" class="lim" width="8" height="9">
+								<a href="http://vilkifranch.ru/?utm_source=b2csite&utm_medium=refferal&utm_campaign=VilkiNet&utm_content=b2csite'nj" class="menu">Франчайзинг</a><img src="/images/lim-2.png" border="0" align="absmiddle" class="lim" width="8" height="9">
+								<a href="/cooperation/" class="menu">Сотрудничество</a><img src="/images/lim-2.png" border="0" align="absmiddle" class="lim" width="8" height="9">
+
+								<a href="/job/" class="menu">Вакансии</a><img src="/images/lim-1.png" border="0" align="absmiddle" class="lim" width="8" height="9">
+								<a href="/guestbook/" class="menu">Отзывы</a>
+
+							</td>
+						</tr>
+					</table>
+
+
+
+				<div class="bottom-block">
+					<div>
+
+					<b>Адреса кафе:</b>
+					<address>Октябрьская площадь, д. 3</address><address>ул.Голубкова, д.6а</address>
+					<br>
+
+					<b>Режим работы в Костроме:</b><br>
+					Режим работы службы доставки  и прием заказов на доставку и самовывоз:<br>Воскресенье - четверг: с 11:00 до 21:30;<br>Пятница - суббота: с 11:00 до 22:30<br>Режим работы кафе, смотри в разделе "Кафе"<br><br><br>
+
+					</div>
+
+					
+
+					<div>
+						<a href="/">«ВилкиНет»</a> — сеть кафе с доставкой<br>
+Все права защищены законом © 2011-2020<br><br>
+
+По вопросам сотрудничества и контролю качества обращайтесь по <a href="mailto:support@vilkinet.ru">support@vilkinet.ru</a><br><br>
+
+<a href='/privacy/'>Политика конфиденциальности</a><br><br>
+
+<a href="https://play.google.com/store/apps/details?id=mobi.absoftware.vilkinet&hl=ru" target="_blank" class="app_hide"><img src="/images/icon-google.jpg" border="0" height="40"></a>
+<a href="https://apps.apple.com/ru/app/вилкинет-доставка-еды/id1173429177" target="_blank" class="app_hide"><img src="/images/icon-apple.jpg" border="0" height="40"></a>						<br><br>
+						Разработано в <a href="http://romanlazarev.com/" target="_blank">romanlazarev.com</a>
+					</div>
+
+				</div>
+
+					<hr class="delimiter">
+
+				<div class="bottom-block">
+					<div>
+
+
+						<b>Мы принимаем к оплате</b><br><br>
+						<img src="/images/paymentsnew.png" border="0" style="display:block;">
+					</div>
+
+
+					<div>
+
+						<div style="float:right;margin-top: 5px;" id="TA_restaurantWidgetWhite157" class="TA_restaurantWidgetWhite">
+							<ul id="xcq3gPGtf" class="TA_links CMtDprqbbu">
+								<li id="PdW9p7r" class="1ewPOb">
+									<a target="_blank" href="http://www.tripadvisor.ru/"><img src="//www.tripadvisor.ru/img/cdsi/partner/tripadvisor_logo_117x18-24177-2.png" alt="TripAdvisor"></a>
+								</li>
+							</ul>
+						</div>
+						<script src="//www.jscache.com/wejs?wtype=restaurantWidgetWhite&uniq=157&locationId=7213258&icon=burgerAndShake&lang=ru&display_version=2"></script>
+
+
+						<b>Будем дружить</b><br><br>
+
+													<a href="https://vk.com/vilkinet_kostroma" class="nobord"><img src="/images/i-v.jpg" border="0" style="margin-right:20px;"></a>
+						
+													<a href="https://www.instagram.com/vilkinet_kostroma/" class="nobord"><img src="/images/i-i.jpg" border="0" style="margin-right:20px;"></a>
+						
+
+					</div>
+
+				</div>
+
+
+			</div></td>
+		</tr>
+	</table>
+
+	<div class="top-bg"></div>
+
+	</center>
+
+	<script src="https://www.google.com/recaptcha/api.js?render=6Ldri6oUAAAAAJsdpV9-bP4ygO4tbzXqJXAM9wCk"></script>
+	<script>
+		var gtoken;
+		grecaptcha.ready(function() {
+			grecaptcha.execute('6Ldri6oUAAAAAJsdpV9-bP4ygO4tbzXqJXAM9wCk', {action: 'index'}).then(function(token) {
+
+				$('.gtoken').val(token);
+				gtoken=token;
+
+			});
+		});
+	</script>
+
+	
+
+</body>
+</html>
+<!-- 0,41709494590759
+Array
+(
+    [all] => 217
+    [req] => 2
+    [query] => 198
+)
+ -->
